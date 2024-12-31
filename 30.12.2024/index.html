@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Manager App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="app">
+        <h1>Task Manager App</h1>
+        <input type="text" id="searchTask" placeholder="Search Task">
+        <div class="actions">
+            <button id="addTaskBtn" class="btn btn-success">Add Task</button>
+            <button id="sortTasksBtn" class="btn btn-primary">⇅ Sort</button>
+        </div>
+        <table id="taskTable">
+            <thead>
+                <tr>
+                    <th>Title</th>
+                    <th>Description</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Task rows will be dynamically added here -->
+            </tbody>
+        </table>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
