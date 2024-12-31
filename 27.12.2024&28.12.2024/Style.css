@@ -1,0 +1,425 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+/* Header Styling */
+header {
+    position: sticky;
+    top: 0;
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    width:100%;
+}
+
+.nav-container h3 {
+    margin: 0;
+    display: flex;
+    align-items: center;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.logo {
+    margin-left: 10px; /* Space between H3 and the logo */
+}
+
+.logo img {
+    height: 40px; /* Adjust based on your design */
+    width: auto;
+}
+
+
+
+.menu {
+    display: flex;
+    gap: 20px;
+}
+
+.menu a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1em;
+    transition: color 0.3s ease;
+}
+
+.menu a:hover {
+    color: #f0a500;
+}
+
+.cart {
+    padding: 8px 12px;
+    background-color: #f0a500;
+    color: #333;
+    text-transform: uppercase;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.cart:hover {
+    background-color: #ffa733;
+}
+
+/* Hero Section */
+.hero {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url('hero.avif') no-repeat center center/cover;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+.hero h1 {
+    font-size: 3em;
+    background: linear-gradient(45deg, #373734, #0b0a09);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Features Section */
+.features {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 40px;
+    background-color: #f9f9f9;
+}
+
+.feature {
+    text-align: center;
+    padding: 20px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.feature:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.feature-icon {
+    font-size: 2em;
+    color: #f0a500;
+    margin-bottom: 10px;
+}
+
+/* Gallery Section */
+.gallery {
+    padding: 20px;
+    display: flex;
+    gap: 20px;
+    max-width: 100%; /* Allow full width of the container */
+    overflow-x: auto; /* Enable horizontal scrolling */
+    white-space: nowrap; /* Prevent line breaks */
+    background-color: #f9f9f9; /* Optional: Add a background color to the section */
+    border-radius: 10px; /* Optional: Add rounded corners */
+    scrollbar-width: thin; /* For Firefox: make the scrollbar thinner */
+}
+
+.gallery img {
+    width: 900px; /* Ensure the width is dynamic */
+    height: 300px; /* Increase the height for larger images */
+    border-radius: 10px;
+    transition: transform 0.3s ease, filter 0.3s ease;
+    object-fit: cover; /* Ensure images fill their container neatly */
+}
+
+.gallery img:hover {
+    transform: scale(1.05);
+    filter: brightness(1.1); /* Slightly brighten the image on hover */
+}
+
+/* Optional: Style the scrollbar */
+.gallery::-webkit-scrollbar {
+    height: 8px; /* Adjust scrollbar height */
+}
+
+.gallery::-webkit-scrollbar-thumb {
+    background: #ccc; /* Scrollbar thumb color */
+    border-radius: 4px;
+}
+
+.gallery::-webkit-scrollbar-thumb:hover {
+    background: #888; /* Darker color on hover */
+}
+
+
+
+
+/* Testimonials Section */
+.testimonials {
+    display: flex;
+    overflow-x: auto; /* Enables horizontal scrolling */
+    gap: 20px;
+    padding: 40px;
+    background-color: #f9f9f9;
+    scroll-behavior: smooth; /* Smooth scrolling effect */
+}
+
+.testimonial {
+    min-width: 400px; /* Increase the width of each testimonial card */
+    max-width: 6000px; /* Optional: Limit the maximum width */
+    text-align: center;
+    padding: 30px; /* Increase padding for a larger size */
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    flex-shrink: 0; /* Prevent shrinking of testimonial cards */
+}
+
+.testimonial:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.testimonial img {
+    width: 80px; /* Increase image size */
+    height: 80px;
+    border-radius: 50%;
+    margin-bottom: 15px; /* Adjust spacing */
+}
+
+/* Pricing Section */
+.pricing {
+    padding: 40px;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+.pricing h3 {
+    margin-bottom:2px; /* Adjust the value to control the spacing */
+}
+
+.pricing-card {
+    text-align: center;
+    padding: 20px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    flex: 1;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.pricing-card.popular {
+    border: 2px solid #f0a500;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.pricing-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* FAQ Section */
+.faq {
+    padding: 40px;
+    background-color: #f9f9f9;
+}
+
+.faq-item {
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+    transition: border-color 0.3s ease;
+}
+
+.faq-item:hover {
+    border-color: #f0a500;
+}
+
+.faq-item input[type="checkbox"] {
+    display: none;
+}
+
+.faq-item label {
+    display: block;
+    padding: 10px;
+    background-color: #fff;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.faq-item .content {
+    display: none;
+    padding: 10px;
+    background-color: #f9f9f9;
+    font-size: 0.9em;
+}
+
+.faq-item input[type="checkbox"]:checked ~ .content {
+    display: block;
+}
+
+/* Footer */
+footer {
+    padding: 20px;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+}
+
+footer a {
+    color: #f0a500;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Scrolling Progress Bar */
+body::before {
+    content: "";
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 5px;
+    background: linear-gradient(45deg, #f0a500, #ffa733);
+    width: calc(var(--scroll, 0%));
+    z-index: 2000;
+    transition: width 0.2s ease;
+}
+/* Service page */
+
+.services-section {
+    text-align: center;
+    padding: 3rem 1rem;
+    background-color: #f7f7f7;
+  }
+
+  .services-heading {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 2rem;
+  }
+
+  .services-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+  }
+
+  .service-card {
+    background: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    padding: 2rem;
+    width: 300px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .service-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+  }
+
+  .service-card img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 1rem;
+  }
+
+  .service-title {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+  }
+
+  .service-description {
+    font-size: 0.9rem;
+    color: #555;
+    margin-bottom: 1.5rem;
+  }
+
+  .service-more {
+    font-size: 1rem;
+    color: #007BFF;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+  }
+
+  .service-more:hover {
+    color: #0056b3;
+  }
+
+  .services-image {
+    margin: 2rem 0;
+    max-width: 100%;
+    border-radius: 8px;
+    overflow: hidden;
+  }
+
+  .services-image img {
+    width: 100%;
+    height: auto;
+  }
+
+  @media (max-width: 768px) {
+    .service-card {
+      width: 90%;
+    }
+  }
+  /* Our Partners */
+  .partners-section {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #f9f9f9;
+  }
+  
+  .partners-section h1 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+    color: #333;
+  }
+  
+  .partners-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 20px;
+    justify-items: center;
+  }
+  
+  .partners-grid img {
+    width: 120px;
+    height: auto;
+    object-fit: contain;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .partners-grid img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+  }

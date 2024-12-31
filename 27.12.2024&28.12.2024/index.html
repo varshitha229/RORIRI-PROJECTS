@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Landing Page</title>
+    <link rel="stylesheet" href="Style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="nav-container">
+            <!-- Logo Section with an Image -->
+             <h3>RAFFA
+            <div class="logo">
+                <img src="logo.avif" alt="Raffa" />
+            </div>
+        </h3>
+            <!-- Navigation Menu -->
+            <nav class="menu">
+                <a href="#features">Features</a>
+                <a href="#gallery">Gallery</a>
+                <a href="#testimonials">Testimonials</a>
+                <a href="#pricing">Pricing</a>
+                <a href="#faq">FAQ</a>
+                <a href="#contact">Contact</a>
+            </nav>
+    
+            
+    
+            <!-- Buy Now Button -->
+            <button class="cart">MYCART</button>
+        </div>
+    </header>
+    
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <h1>Revolutionize Your Experience</h1>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="features">
+        <div class="feature" data-aos="fade-up">
+            <div class="feature-icon">📱</div>
+            <h3>Responsive Design</h3>
+            <p>Adapts seamlessly to any device for an optimal user experience.</p>
+        </div>
+        <div class="feature" data-aos="fade-up" data-aos-delay="100">
+            <div class="feature-icon">⚡</div>
+            <h3>Fast Performance</h3>
+            <p>Lightning-fast loading speeds to keep users engaged.</p>
+        </div>
+        <div class="feature" data-aos="fade-up" data-aos-delay="200">
+            <div class="feature-icon">🔒</div>
+            <h3>Secure</h3>
+            <p>Advanced security features to protect your data.</p>
+        </div>
+        <div class="feature" data-aos="fade-up" data-aos-delay="300">
+            <div class="feature-icon">🌐</div>
+            <h3>Global Reach</h3>
+            <p>Designed for accessibility and usability worldwide.</p>
+        </div>
+        <div class="feature" data-aos="fade-up" data-aos-delay="400">
+            <div class="feature-icon">💡</div>
+            <h3>Innovative Solutions</h3>
+            <p>Creative approaches to solve modern challenges.</p>
+        </div>
+        <div class="feature" data-aos="fade-up" data-aos-delay="500">
+            <div class="feature-icon">🤝</div>
+            <h3>Customer Support</h3>
+            <p>Dedicated 24/7 support to assist you anytime.</p>
+        </div>
+    </section>
+    
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="gallery">
+        <img src="gallerypic1.jpeg" alt="Gallery Image 1">
+        <img src="gallerypic2.webp" alt="Gallery Image 2">
+        <img src="gallerypic3.webp" alt="Gallery Image 3">
+        <img src="gallerypic4.jpeg" alt="Gallery Image 4">
+        <img src="gallerypic5.webp" alt="Gallery Image 5">
+        <img src="gallerypic6.webp" alt="Gallery Image 6">
+        <img src="gallerypic7.webp" alt="Gallery Image 7">
+       
+       
+        <!-- Repeat for other images -->
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials">
+        <div class="testimonial">
+            <img src="profilepicture1.webp" alt="Profile Picture">
+            <h4>Smith</h4>
+            <p>"This smartwatch has completely changed my daily routine. The fitness tracking is spot-on!"</p>
+        </div>
+        <div class="testimonial">
+            <img src="profilepicture2.jpg" alt="Profile Picture">
+            <h4>Liam Johnson</h4>
+            <p>"I love the sleek design and battery life. It lasts for days on a single charge!"</p>
+        </div>
+        <div class="testimonial">
+            <img src="profilepicture3.jpg" alt="Profile Picture">
+            <h4>Sophia Brown</h4>
+            <p>"The notifications and call features make it so convenient. Highly recommended!"</p>
+        </div>
+        <!-- Repeat for other testimonials -->
+    </section>
+
+    <!-- Pricing Section -->
+    <div class="pricing">
+        <h3>Basic</h3>
+        <p>$10/month</p>
+    </div>
+        
+        
+        <!-- Highlighted plan -->
+        <div class="pricing-card popular">
+            <h3>Pro</h3>
+            <p>$20/month</p>
+        </div>
+        <div class="pricing">
+            <h3>Preminum</h3>
+            <p>$40/month</p>
+        </div>
+        
+        <!-- Repeat for other plans -->
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="faq">
+        <div class="faq-item">
+            <input type="checkbox" id="faq1">
+            <label for="faq1">What is this product?</label>
+            <div class="content">This is a revolutionary product that solves...</div>
+        </div>
+        <!-- Repeat for other FAQs -->
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Raffa. All rights reserved.</p>
+        <a href="#">Facebook</a>
+        <a href="#">Twitter</a>
+        <a href="#">Instagram</a>
+    </footer>
+
+    <!-- JavaScript for Scrolling Progress Bar -->
+    <script>
+        window.addEventListener("scroll", () => {
+            const scrollHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+            const scrolled = (window.scrollY / scrollHeight) * 100;
+            document.documentElement.style.setProperty("--scroll", `${scrolled}%`);
+        });
+    </script>
+</body>
+</html>
